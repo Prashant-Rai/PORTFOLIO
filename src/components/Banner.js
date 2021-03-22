@@ -31,6 +31,6 @@ const Banner = () => {
             </div>
         </header>
     )
-}
+};
 
 export default Banner;
