@@ -29,7 +29,7 @@ const Nav = () => {
                 <div className='navItems'>
                     <ul className='navbarLeft'>
                         <div className='navbarLogo'>
-                            <div className='font-effect-neon logoName'>
+                            <div className='logoName'>
                                 Prashant Rai
                                 <div className='logoDesignation'>Software Engineer</div>
                             </div>

@@ -1,6 +1,26 @@
-import React from 'react'
+import React from 'react';
+
+const skillsMap = [
+    {id: 1, skillName: 'Javascript', skillCount: 8/10},
+    {id: 2, skillName: 'React.js', skillCount: 8/10},
+    {id: 3, skillName: 'GraphQL', skillCount: 7/10},
+    {id: 4, skillName: 'GitHub', skillCount: 6/10},
+    {id: 5, skillName: 'Node.js', skillCount: 5/10},
+];
 
 const Skills = () => {
+    const skills = skillsMap.map(({id, skillName, skillCount}) => {
+        return(
+            <div className='skillBar' key={id}>
+                <p>{skillName}</p>
+                <div className='outerBar'>
+                    <div className='innerBar' style={{width: `${skillCount * 100}%`}}>
+                        <div className='skillCount'>{skillCount * 100}%</div>
+                    </div>    
+                </div>     
+            </div> 
+        );
+    })
     return (
         <div className='skills' id='skills'>
             <div className='container'>
@@ -9,53 +29,13 @@ const Skills = () => {
                         <div className='expertise'>
                             <h5 className='expertHeaderSmall'>I,M EXPERT ON</h5>
                             <h2 className='mainHeader'>Let,s Work Together</h2>
-                            <p className='skillsDescription mainContent'>Phasellus accumsan scelerisque dolor, quis mattis justo bibendum non. Nulla sollicitudin turpis in elementum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                            <p className='skillsDescription mainContent'>Currently I am working with some awsome technologies like Javascript, React.js and GraphQL. I have also used Git to manage the code remotely. Currently i am in process to learn Node.js to manage server side.</p>
                             <div className='btn'><a href='#' className='portfolioBtn'>Hire Me</a></div>
                         </div>
                     </div>
                     <div className='col-6'>
                         <div className='skillRatings'>
-                            <div className='skillBar'>
-                                <p>React.js</p>
-                                <div className='outerBar'>
-                                    <div className='innerBar'>
-                                        <div className='skillCount'>80%</div>
-                                    </div>    
-                                </div>    
-                            </div>
-                            <div className='skillBar'>
-                                <p>GraphQL</p>
-                                <div className='outerBar'>
-                                    <div className='innerBar'>
-                                        <div className='skillCount'>80%</div>
-                                    </div>    
-                                </div>      
-                            </div> 
-                            <div className='skillBar'>
-                                <p>Javascript</p>
-                                <div className='outerBar'>
-                                    <div className='innerBar'>
-                                        <div className='skillCount'>80%</div>
-                                    </div>    
-                                </div>     
-                            </div> 
-                            <div className='skillBar'>
-                                <p>Git</p>
-                                <div className='outerBar'>
-                                    <div className='innerBar'>
-                                        <div className='skillCount'>80%</div>
-                                    </div>    
-                                </div>  
-                            </div> 
-                            <div className='skillBar'>
-                                <p>Node.js</p>
-                                <div className='outerBar'>
-                                    <div className='innerBar'>
-                                        <div className='skillCount'>80%</div>
-                                    </div>    
-                                </div>  
-                            </div>        
-                    
+                            {skills}      
                         </div>
                     </div>
                 </div>

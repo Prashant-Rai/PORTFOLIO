@@ -8,7 +8,9 @@ const Contact = () => {
             <div className='container'>
                 <div className='common'>
                     <h1 className='mainHeader'>Contact Me</h1>
-                    <p className='mainContent'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
+                    <p className='mainContent'>
+                        I am always excited to work on some awesome projects, contact me and let's discuss over coffee.
+                    </p>
                     <div className='commonBorder'></div>
                 </div>
                 <div className='contactCardsWrapper'>

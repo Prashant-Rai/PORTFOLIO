@@ -3,7 +3,31 @@ import React from 'react';
 import { FaFacebookF, FaTwitterSquare, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import prashantImage from '../assets/images/prashant.jpg';
 
+const socialIconMap = [
+    {link: 'https://www.instagram.com/__prashant_rai__/', component: FaGithub},
+    {link: 'https://www.linkedin.com/in/prashantrai118/', component: FaLinkedinIn},
+    {link: 'https://www.facebook.com/prashant.rai.3597789/', component: FaFacebookF},
+    {link: 'https://www.instagram.com/__prashant_rai__/', component: FaInstagram},
+];
+
+const getTotalExperience = (firstDate, secondDate) => {
+    let totalMonths = (secondDate.getFullYear() - firstDate.getFullYear()) * 12;
+    totalMonths -= firstDate.getMonth();
+    totalMonths += secondDate.getMonth();
+    totalMonths = totalMonths <= 0 ? 0 : totalMonths;
+    const years = Math.floor(totalMonths/12), months = totalMonths%12;
+    return `${years} years ${months} months`
+};
+
 const Banner = () => {
+    const socialIcons = socialIconMap.map(({link, component: Component}) => {
+        return <a href={link} target='_blank'><li><Component /></li></a>
+    });
+
+    const JOINING_DATE = new Date('07-02-2018'),
+        CURRENT_DATE = new Date();
+
+    const experience = getTotalExperience(JOINING_DATE, CURRENT_DATE);
     return (
         <header className='banner' id='home'>
             <div className='container'>
@@ -11,14 +35,10 @@ const Banner = () => {
                     <div className='col-6'>
                         <div className='basicInfo'>
                             <ul className='socialIcons'>
-                                <li><FaFacebookF /></li>
-                                <li><FaTwitterSquare /></li>
-                                <li><FaInstagram /></li>
-                                <li><FaLinkedinIn /></li>
-                                <li><FaGithub /></li>
+                                {socialIcons}
                             </ul>
                             <h1>I am Prashant Rai</h1>
-                            <p>i,m Prashant, professional web developer with an experience of approx 3 years in this field.</p>
+                            <p>i,m Prashant, professional web developer with an experience of {experience} in this field.</p>
                             <div className='btn'><a href='#about' className='portfolioBtn'>Check My Portfolio</a></div>
                         </div>
                     </div>

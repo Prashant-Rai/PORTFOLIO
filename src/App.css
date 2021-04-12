@@ -104,6 +104,10 @@ body{
   margin: 0 0 20px 0;
 }
 
+.basicInfo .socialIcons a{
+  color: #fff;
+}
+
 .basicInfo .socialIcons li{
   width: 50px;
   height: 50px;
@@ -239,7 +243,6 @@ body{
 
 .innerBar{
   background: #ff4a57;
-  width: 80%;
   height: 8px;
   border-radius: 30px;
 }
