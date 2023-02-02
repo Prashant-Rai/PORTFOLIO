@@ -50,9 +50,11 @@ const Banner = () => {
                             </ul>
                             <h1>I am Prashant Rai</h1>
                             <p>i,m Prashant, professional web developer with an experience of {experience} in this field.</p>
-                            <div className='btnWrapper'>
-                                <div className='btn'><a href='#about' className='portfolioBtn'>My Portfolio</a></div>
-                                <div className='downloadResume' onClick={onDownloadResume}>My Resume</div>  
+                            <div className='btnContainer'>
+                                <div className='btnWrapper'>
+                                    <div className='btn'><a href='#about' className='portfolioBtn'>My Portfolio</a></div>
+                                    <div className='downloadResume' onClick={onDownloadResume}>My Resume</div>  
+                                </div>
                             </div>
                            
                         </div>

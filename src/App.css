@@ -571,3 +571,32 @@ body{
   }
 
 }
+
+@media (max-width: 400px){
+
+  .employeeImage > img {
+    width: 290px;
+    height: 290px;
+  }
+
+  .basicInfo{
+    width: 100%;
+  }
+
+  .basicInfo > h1 {
+    font-size: 30px;
+  }
+
+  .btnContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btnWrapper{
+    display: block;
+  }
+  .btn {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
