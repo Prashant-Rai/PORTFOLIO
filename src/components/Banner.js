@@ -28,6 +28,17 @@ const Banner = () => {
         CURRENT_DATE = new Date();
 
     const experience = getTotalExperience(JOINING_DATE, CURRENT_DATE);
+
+    const onDownloadResume = () => {
+        const RESUME_URL = process.env.PUBLIC_URL+'/prashant_resume_2023.pdf'
+        const fileName = RESUME_URL.split('/').pop();
+        const aTag = document.createElement('a');
+        aTag.href = RESUME_URL;
+        aTag.setAttribute('download', fileName);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+    }
     return (
         <header className='banner' id='home'>
             <div className='container'>
@@ -39,7 +50,11 @@ const Banner = () => {
                             </ul>
                             <h1>I am Prashant Rai</h1>
                             <p>i,m Prashant, professional web developer with an experience of {experience} in this field.</p>
-                            <div className='btn'><a href='#about' className='portfolioBtn'>Check My Portfolio</a></div>
+                            <div className='btnWrapper'>
+                                <div className='btn'><a href='#about' className='portfolioBtn'>My Portfolio</a></div>
+                                <div className='downloadResume' onClick={onDownloadResume}>My Resume</div>  
+                            </div>
+                           
                         </div>
                     </div>
                     <div className='col-6 profileImage'>

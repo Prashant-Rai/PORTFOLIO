@@ -126,7 +126,7 @@ body{
 }
 
 .basicInfo h1{
-  font-size: 57px;
+  font-size: 50px;
   font-weight: 700;
   margin: 0 0 20px 0;
 }
@@ -138,21 +138,40 @@ body{
   margin-bottom: 70px;
 }
 
+.btnWrapper {
+  display: flex;
+}
+
 .btn{
   outline: none;
   border: none;
+  border: 2px solid #ff4a57;
+  padding: 13px 30px;
+  border-radius: 23px;
+  margin-right: 20px;
+  width: fit-content;
 }
  .btn .portfolioBtn{
-   border: 2px solid #ff4a57;
+   text-decoration: none;
+   color: #fff;
+ } 
+
+ .downloadResume {
+  border: 2px solid #ff4a57;
    color: #fff;
    text-decoration: none;
-   padding: 13px 40px;
+   padding: 13px 30px;
    border-radius: 23px;
+   cursor: pointer;
  }
 
- .btn .portfolioBtn:hover{
+ .btn:hover{
    background-color: #ff4a57;
  }
+
+ .downloadResume:hover{
+  background-color: #ff4a57;
+}
 
  .profileImage{
    display: flex;
@@ -221,6 +240,10 @@ body{
   color: #ff4a57;
     font-size: 16px;
     margin-bottom: 20px;
+}
+
+.expertiseHeaderSmall{
+    display: none;
 }
 
 .skillRatings{
@@ -354,11 +377,7 @@ body{
   color: red;
 }
 
-@media (max-width: 1024px){ 
-  .banner > .container > .row {
-    text-align: center;
-  }
-
+@media only screen and (max-width: 1024px){ 
   .banner > .container > .row > .col-6 {
     width: 100%;
     display: flex;
@@ -366,20 +385,78 @@ body{
     justify-content: center;
   }
 
-  .profileImage {
-    display: none !important;
+  .basicInfo > h1 {
+    font-size: 40px;
   }
 
-  .basicInfo{
-    padding-top: 50px;
+  .basicInfo > p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
   }
 
-  .socialIcons{
-    justify-content: center;
+  .employeeImage > img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 850px){ 
+  .basicInfo > h1 {
+    font-size: 35px;
+  }
+
+  .btn, .downloadResume {
+    padding: 13px 15px;
   }
 }
 
 @media (max-width: 768px){
+  .banner {
+    padding-top: 130px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .banner > .container > .row {
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+  } 
+
+  .basicInfo > h1 {
+    font-size: 40px;
+  }
+
+  .basicInfo > .socialIcons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .btnWrapper {
+    justify-content: center;
+  }
+
+  .btn, .downloadResume {
+    padding: 13px 30px;
+    font-size: 20px;
+  }
+
+  .skills {
+    padding-top: 50px;
+  }
+
+  .expertiseHeaderSmall{
+      font-size: 32px;
+      margin-bottom: 50px;
+      display: block;
+  }
+
+  .expertHeaderSmall{
+      display: none;
+  }
+  
   .container{
     width: 100%;
     padding: 0 30px;
@@ -435,9 +512,17 @@ body{
     font-size: 20px;
   }
 
+  .skills > .container > .row {
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .col-6 > .skillRatings{
     margin-left: 0;
     line-height: 2;
+    margin-bottom: 50px;
   }
 
   .contactCardsWrapper{

@@ -10,8 +10,8 @@ import CopyRight from './components/CopyRight';
 function App() {
   return (
     <div className="App">
-      <Banner />
       <NavBar />
+      <Banner />
       <About />
       <Skills />
       <ProjectsInfo />

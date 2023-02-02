@@ -34,6 +34,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className='col-6'>
+                        <h5 className='expertiseHeaderSmall'>My Expertise</h5>
                         <div className='skillRatings'>
                             {skills}      
                         </div>
