@@ -11,15 +11,17 @@ const ProjectsInfo = () => {
                         <div className='icon'>
                             <FaCodepen />
                         </div>
-                        <h2 className='count'>2</h2>
-                        <p className='desc'>Projects</p>
+                        <h2 className='count'>2+</h2>
+                        <p className='desc'>Projects Completed</p>
+                        <div className='commonBorder isHidden'></div>
                     </div>
                     <div className='headerInfo'>
                         <div className='icon'>
                             <FaAward />
                         </div>
                         <h2 className='count'>3</h2>
-                        <p className='desc'>Awards</p>
+                        <p className='desc'>Awards Win</p>
+                        <div className='commonBorder isHidden'></div>
                     </div>
                     <div className='headerInfo'>
                         <div className='icon'>
