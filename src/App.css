@@ -246,6 +246,12 @@ body{
     margin-bottom: 20px;
 }
 
+.expHeader{
+  color: #ff4a57;
+  font-size: 20px;
+  margin: 0 0 20px 20px;
+}
+
 .expertiseHeaderSmall{
     display: none;
 }
@@ -283,8 +289,14 @@ body{
 
 .projectsInfo{
   width: 100%;
-   background: #1f2235;
+   background: #23263a;;
    padding: 100px 0;
+   color: #fff;
+}
+
+.timeline{
+  width: 100%;
+   background: #1f2235;
    color: #fff;
 }
 
@@ -317,7 +329,7 @@ body{
 }
 
 .contact{
-  background: #23263a;
+  background: #1f2235;
   width: 100%;
   padding: 100px 0;
   color: #fff;
@@ -332,7 +344,7 @@ body{
 }
 
 .contactCard{
-  background: #1f2235;
+  background: #23263a;;
   padding: 25px;
   padding-left: 20px;
   border-radius: 10px;
@@ -364,7 +376,7 @@ body{
 }
 
 .copyRight{
-  background: #1f2235;
+  background: #23263a;;
   width: 100%;
   padding: 25px 0;
   color: #fff;
@@ -379,6 +391,58 @@ body{
 .indianHeart{
   padding-right: 0 10px;
   color: red;
+}
+
+.timelineContainer {
+  margin: 0 20px;
+  border-left: 10px solid #fff;
+  padding: 0 30px;
+  border-radius: 10px;
+}
+
+.timeline > .container {
+  display: flex;
+  justify-content: center;
+}
+
+.timelineContainer > .card {
+  background-color: #23263a;
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: fit-content;
+}
+
+.timelineContainer > .card:last-child {
+margin-bottom: 0;
+}
+
+.card::before{
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 10px;
+  left: -49px;
+}
+
+.card::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+  border-width: 12px;
+  position: absolute;
+  left: -25px;
+  top: 8px;
 }
 
 @media only screen and (max-width: 1024px){ 
@@ -403,6 +467,12 @@ body{
     width: 350px;
     height: 350px;
   }
+  .timelineContainer > .card > h2{
+    font-size: 21px;
+  }
+  .timelineContainer > .card > h3{
+    font-size: 17px;
+  }
 }
 
 @media only screen and (max-width: 850px){ 
@@ -412,6 +482,10 @@ body{
 
   .btn, .downloadResume {
     padding: 13px 15px;
+  }
+
+  .timelineContainer > .card > h2{
+    font-size: 17px;
   }
 }
 
@@ -436,6 +510,9 @@ body{
   .basicInfo > .socialIcons {
     justify-content: center;
     margin-top: 20px;
+  }
+  .timeline > .container >.row{
+    height: auto;
   }
 
   .btnWrapper {
