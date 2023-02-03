@@ -376,7 +376,7 @@ body{
 }
 
 .copyRight{
-  background: #23263a;;
+  background: #1f2235;;
   width: 100%;
   padding: 25px 0;
   color: #fff;
@@ -444,6 +444,38 @@ margin-bottom: 0;
   left: -25px;
   top: 8px;
 }
+
+.testimonials{
+  background: #23263a;
+  width: 100%;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.testimonialsCardsWrapper{
+  margin-top: 60px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.testimonialsCardsWrapper::-webkit-scrollbar{
+  display: none;
+}
+
+.testimonialsCard {
+  min-width: 350px;
+  background: #1f2235;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 20px;
+}
+
+.testimonialsDescription{
+  color: #fff;
+}
+
 
 @media only screen and (max-width: 1024px){ 
   .banner > .container > .row > .col-6 {

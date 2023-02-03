@@ -7,6 +7,7 @@ import ProjectsInfo from './components/ProjectsInfo';
 import Contact from './components/Contact';
 import CopyRight from './components/CopyRight';
 import ExperienceAndEducation from './components/ExpAndEdu';
+import Testimonials from './components/Testimonials';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ExperienceAndEducation />
       <ProjectsInfo />
       <Contact />
+      <Testimonials />
       <CopyRight />
       
     </div>
