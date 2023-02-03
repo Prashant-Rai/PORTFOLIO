@@ -511,8 +511,31 @@ margin-bottom: 0;
     justify-content: center;
     margin-top: 20px;
   }
+
   .timeline > .container >.row{
     height: auto;
+    padding: 100px 0;
+  }
+
+  .timeline > .container >.row > .col-6{
+    display: flex;
+    justify-content: center;
+  }
+
+  .timeline > .container >.row > .col-6:first-child{
+    margin-bottom: 25px;
+  }
+
+  .experienceContainer > .commonBorder{
+    margin-top: 50px;
+  }
+
+  .experienceContainer > .expHeader {
+    text-align: center;
+    margin-left: 0;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 50px;
   }
 
   .btnWrapper {
@@ -647,6 +670,12 @@ margin-bottom: 0;
     margin-bottom: 25px;
   }
 
+}
+
+@media (max-width: 480px){
+  .timelineContainer{
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 400px){
