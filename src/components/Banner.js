@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { FaFacebookF, FaTwitterSquare, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import prashantImage from '../assets/images/prashant.jpg';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const socialIconMap = [
     {link: 'https://www.instagram.com/__prashant_rai__/', component: FaGithub},
@@ -20,6 +19,7 @@ const getTotalExperience = (firstDate, secondDate) => {
 };
 
 const Banner = () => {
+    const imgURL = process.env.PUBLIC_URL + '/prashant.jpg'
     const socialIcons = socialIconMap.map(({link, component: Component}) => {
         return <a href={link} target='_blank'><li><Component /></li></a>
     });
@@ -61,7 +61,7 @@ const Banner = () => {
                     </div>
                     <div className='col-6 profileImage'>
                         <div className='employeeImage'>
-                            <img src={prashantImage} alt={'Prashant Rai'}/>
+                            <img src={imgURL} alt={'Prashant Rai'}/>
                         </div>
                     </div>
                 </div>

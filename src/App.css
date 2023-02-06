@@ -289,7 +289,7 @@ body{
 
 .projectsInfo{
   width: 100%;
-   background: #23263a;;
+   background: #1f2235;
    padding: 100px 0;
    color: #fff;
 }
@@ -329,7 +329,7 @@ body{
 }
 
 .contact{
-  background: #1f2235;
+  background: #23263a;
   width: 100%;
   padding: 100px 0;
   color: #fff;
@@ -344,7 +344,7 @@ body{
 }
 
 .contactCard{
-  background: #23263a;;
+  background: #1f2235;;
   padding: 25px;
   padding-left: 20px;
   border-radius: 10px;
@@ -376,7 +376,7 @@ body{
 }
 
 .copyRight{
-  background: #1f2235;;
+  background: #23263a;;
   width: 100%;
   padding: 25px 0;
   color: #fff;
@@ -446,7 +446,7 @@ margin-bottom: 0;
 }
 
 .testimonials{
-  background: #23263a;
+  background: #1f2235;
   width: 100%;
   padding: 100px 0;
   color: #fff;
@@ -466,7 +466,7 @@ margin-bottom: 0;
 
 .testimonialsCard {
   min-width: 350px;
-  background: #1f2235;
+  background: #23263a;
   border-radius: 10px;
   margin-right: 10px;
   padding: 20px;
@@ -474,6 +474,33 @@ margin-bottom: 0;
 
 .testimonialsDescription{
   color: #fff;
+}
+
+.projects{
+  background: #23263a;
+  width: 100%;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.projectCardsWrapper{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projectsCard {
+  background: #1f2235;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+}
+
+.projectsCard img{
+  width: 100%;
+  height: auto;
 }
 
 

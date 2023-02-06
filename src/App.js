@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import CopyRight from './components/CopyRight';
 import ExperienceAndEducation from './components/ExpAndEdu';
 import Testimonials from './components/Testimonials';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Skills />
       <ExperienceAndEducation />
+      <Projects />
       <ProjectsInfo />
       <Contact />
       <Testimonials />
